@@ -29,17 +29,17 @@ git clone https://github.com/Juannnns/financial-data-system.git
 
 ## 2️⃣ Instalar dependencias del backend
 
-
+```
 npm install express mysql2 csv-parser
+```
 
-###############################################################################
-# 3️⃣ Instalar dependencias del frontend
-###############################################################################
-echo "📦 Instalando dependencias del frontend..."
-cd ../frontend || exit
-npm install vite
+## 3️⃣ Instalar dependencias del frontend
 
-###############################################################################
+```
+npm install vite@lastest
+```
+
+
 # 📊 Normalización de la Base de Datos
 # 1FN: eliminar grupos repetidos y asegurar valores atómicos
 # 2FN: eliminar dependencias parciales de claves compuestas
