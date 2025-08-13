@@ -1,80 +1,71 @@
 
-# 📌 Sistema de Gestión de Datos Financieros
+# 📌 Financial Data Management System
 
-## Descripción:
- Este sistema resuelve el problema de gestionar datos financieros desorganizados provenientes de plataformas como Nequi y Daviplata, almacenados en múltiples archivos Excel. 
+## Description:
+This system solves the problem of managing disorganized financial data from platforms like Nequi and Daviplata, stored in multiple Excel files.
 
-## Funcionalidades:
- - Normalización (1FN, 2FN, 3FN)
-- Base de datos MySQL relacional
- - Carga masiva desde CSV
- - API CRUD en Express.js
- - Dashboard en Vite
-- Consultas SQL avanzadas
+## Features:
+ - Normalization (1FN, 2FN, 3FN).
+- Relational MySQL database.
+ - Buck loading from CSV.
+ - CRUD API in express.js.
+ - Dashboard in vite 
+- Advanced SQL queries 
 
-
-## 🚀 Tecnologías Utilizadas
+## 🚀 Technology used 
  - Frontend: Vite@latest
  - Backend: Express.js
- - Base de datos: MySQL
+ - Database: MySQL
  - Driver: mysql2
- - Procesamiento CSV: csv-parser
+ - CSV processing: csv-parser
 
 
-## 1️⃣ Clonar repositorio
-
+## 1️⃣ Clone repository 
 ```
 git clone https://github.com/Juannnns/financial-data-system.git
 ```
 
-## 2️⃣ Instalar dependencias del backend
+## 2️⃣ Install backend dependencies 
 
 ```
 npm install express mysql2 csv-parser
 ```
 
-## 3️⃣ Instalar dependencias del frontend
-
+## 3️⃣ Install frontend dependencies 
 ```
 npm install vite@lastest
 ```
 
 
-## 📊 Normalización de la Base de Datos
-- 1FN: eliminar grupos repetidos y asegurar valores atómicos
--  2FN: eliminar dependencias parciales de claves compuestas
-- 3FN: eliminar dependencias transitivas
+## 📊 Datable normalization 
+- 1FN: remove repeating groups and ensure atomic values
+-  2FN: remove partial dependencies of composite keys
+- 3FN: remove transitive dependencies
 
 
-## 📥 Carga Masiva desde CSV
-El archivo .xlsx original se convierte a .csv y se procesa con csv-parser para insertarlo en la base de datos.
+## 📥 Buck load from CSV 
+The original .xlsx file is converted to .csv and processed with csv-parser to insert it into the database.
 
-## 🖥 API CRUD
- Funciones:
- - Crear: Agregar registros
- - Leer: Obtener datos
- - Actualizar: Modificar registros existentes
-- Eliminar: Borrar registros
+## 🖥 CRUD API
+ Functions:
+ - Create: Add records 
+ - Read: retrieve date 
+ - Update: modify existing records 
+- Delete: remove records 
 
+## 📌 Advance queries (run from Postman):
+1. Total paid for customer 
+ 2. Pending invoices with customer and transaction data
+ 3. Transactions by platform (Nequi, Daviplata)
 
-## 📌 Consultas Avanzadas (ejecutar desde Postman):
-1. Total pagado por cliente
- 2. Facturas pendientes con datos de cliente y transacción
- 3. Transacciones por plataforma (Nequi, Daviplata)
-
-
-## 4️⃣ Iniciar backend
+## 4️⃣ Start backend
 ```
 node server.js 
 ```
 
 
-##5️⃣ Iniciar frontend
+##5️⃣ Start frontend
 ```
 npm run dev
 ```
 
-## 👤 Información del Desarrollador
-- Nombre: Juan José 
-- Clan: Tayrona 
-- Correo: juanbarrios0956@gmail.ckm
