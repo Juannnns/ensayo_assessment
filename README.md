@@ -40,67 +40,44 @@ npm install vite@lastest
 ```
 
 
-# 📊 Normalización de la Base de Datos
-# 1FN: eliminar grupos repetidos y asegurar valores atómicos
-# 2FN: eliminar dependencias parciales de claves compuestas
-# 3FN: eliminar dependencias transitivas
-###############################################################################
+## 📊 Normalización de la Base de Datos
+- 1FN: eliminar grupos repetidos y asegurar valores atómicos
+-  2FN: eliminar dependencias parciales de claves compuestas
+- 3FN: eliminar dependencias transitivas
 
-###############################################################################
-# 4️⃣ Configurar la base de datos
-###############################################################################
-echo "🛠 Creando base de datos..."
-cd .. || exit
-mysql -u root -p < scripts/create_db.sql
 
-###############################################################################
-# 📥 Carga Masiva desde CSV
-# El archivo .xlsx original se convierte a .csv y se procesa con csv-parser
-# para insertarlo en la base de datos.
-###############################################################################
-echo "📥 Importando datos desde CSV..."
-node scripts/import_csv.js
+## 📥 Carga Masiva desde CSV
+El archivo .xlsx original se convierte a .csv y se procesa con csv-parser para insertarlo en la base de datos.
 
-###############################################################################
-# 🖥 API CRUD
-# Funciones:
-# - Crear: Agregar registros
-# - Leer: Obtener datos
-# - Actualizar: Modificar registros existentes
-# - Eliminar: Borrar registros
-###############################################################################
+## 🖥 API CRUD
+ Funciones:
+ - Crear: Agregar registros
+ - Leer: Obtener datos
+ - Actualizar: Modificar registros existentes
+- Eliminar: Borrar registros
 
-###############################################################################
-# 📌 Consultas Avanzadas (ejecutar desde Postman):
-# 1. Total pagado por cliente
-# 2. Facturas pendientes con datos de cliente y transacción
-# 3. Transacciones por plataforma (Nequi, Daviplata)
-###############################################################################
 
-###############################################################################
-# 5️⃣ Iniciar backend
-###############################################################################
-echo "🚀 Iniciando backend..."
-cd backend || exit
-node server.js &
+## 📌 Consultas Avanzadas (ejecutar desde Postman):
+1. Total pagado por cliente
+ 2. Facturas pendientes con datos de cliente y transacción
+ 3. Transacciones por plataforma (Nequi, Daviplata)
 
-###############################################################################
-# 6️⃣ Iniciar frontend
-###############################################################################
-echo "🌐 Iniciando frontend..."
-cd ../frontend || exit
+
+## 4️⃣ Iniciar backend
+```
+node server.js 
+```
+
+
+##5️⃣ Iniciar frontend
+```
 npm run dev
+```
 
-###############################################################################
-# 📷 Modelo Relacional
-# Guardado en: model/relational_model.png
-###############################################################################
-
-###############################################################################
-# 👤 Información del Desarrollador
-# Nombre: Tu Nombre
-# Clan: Tu Clan
-# Correo: tu.email@example.com
+## 👤 Información del Desarrollador
+# Nombre: Juan José 
+# Clan: Tayrona 
+# Correo: juanbarrios0956@gmail.ckm
 ###############################################################################
 
 echo "✅ Sistema de Gestión de Datos Financieros instalado y ejecutándose."
