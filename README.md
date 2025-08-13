@@ -1,44 +1,35 @@
 
-###############################################################################
 # 📌 Sistema de Gestión de Datos Financieros
-#
-# Descripción:
-# Este sistema resuelve el problema de gestionar datos financieros
-# desorganizados provenientes de plataformas como Nequi y Daviplata,
-# almacenados en múltiples archivos Excel. 
-# 
-# Funcionalidades:
-# - Normalización (1FN, 2FN, 3FN)
-# - Base de datos MySQL relacional
-# - Carga masiva desde CSV
-# - API CRUD en Express.js
-# - Dashboard en Vite
-# - Consultas SQL avanzadas
-###############################################################################
 
-echo "📢 Iniciando instalación del Sistema de Gestión de Datos Financieros..."
+## Descripción:
+ Este sistema resuelve el problema de gestionar datos financieros desorganizados provenientes de plataformas como Nequi y Daviplata, almacenados en múltiples archivos Excel. 
 
-###############################################################################
-# 🚀 Tecnologías Utilizadas
-# - Frontend: Vite@latest
-# - Backend: Express.js
-# - Base de datos: MySQL
-# - Driver: mysql2
-# - Procesamiento CSV: csv-parser
-###############################################################################
+## Funcionalidades:
+ - Normalización (1FN, 2FN, 3FN)
+- Base de datos MySQL relacional
+ - Carga masiva desde CSV
+ - API CRUD en Express.js
+ - Dashboard en Vite
+- Consultas SQL avanzadas
 
-###############################################################################
-# 1️⃣ Clonar repositorio
-###############################################################################
-echo "🔽 Clonando repositorio..."
-git clone https://github.com/tuusuario/financial-data-system.git
-cd financial-data-system || { echo "❌ Error: No se pudo acceder al proyecto"; exit 1; }
 
-###############################################################################
-# 2️⃣ Instalar dependencias del backend
-###############################################################################
-echo "📦 Instalando dependencias del backend..."
-cd backend || exit
+## 🚀 Tecnologías Utilizadas
+ - Frontend: Vite@latest
+ - Backend: Express.js
+ - Base de datos: MySQL
+ - Driver: mysql2
+ - Procesamiento CSV: csv-parser
+
+
+## 1️⃣ Clonar repositorio
+
+```
+git clone https://github.com/Juannnns/financial-data-system.git
+```
+
+## 2️⃣ Instalar dependencias del backend
+
+
 npm install express mysql2 csv-parser
 
 ###############################################################################
