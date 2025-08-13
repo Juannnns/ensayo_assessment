@@ -75,6 +75,6 @@ npm run dev
 ```
 
 ## 👤 Información del Desarrollador
-Nombre: Juan José 
-Clan: Tayrona 
-Correo: juanbarrios0956@gmail.ckm
+- Nombre: Juan José 
+- Clan: Tayrona 
+- Correo: juanbarrios0956@gmail.ckm
