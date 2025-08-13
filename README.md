@@ -75,9 +75,6 @@ npm run dev
 ```
 
 ## 👤 Información del Desarrollador
-# Nombre: Juan José 
-# Clan: Tayrona 
-# Correo: juanbarrios0956@gmail.ckm
-###############################################################################
-
-echo "✅ Sistema de Gestión de Datos Financieros instalado y ejecutándose."
+Nombre: Juan José 
+Clan: Tayrona 
+Correo: juanbarrios0956@gmail.ckm
